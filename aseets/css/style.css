@@ -1,13 +1,15 @@
+body{
+    background-color: #000000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.img-nav{
+    width: 30px;
+    height: 30px;
+    position: relative;  
+}
+
 .carousel{
     background: none;
 }
-.img-nav{
-    width: 40px;
-    height: 40px;
-    position: relative;
-    
-}
-body{
-    background-color: #000000;
 
-}
