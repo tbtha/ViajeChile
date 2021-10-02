@@ -11,9 +11,12 @@ body{
     height: 30px;
     position: relative;  
 }
-
 .carousel{
     background: none;
 }
 
+#quienesSomos i{
+    padding-left: 140px;
+    color: #ffffff;
+}
 

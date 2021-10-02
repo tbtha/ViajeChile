@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
     <link rel="shortcut icon" href="aseets/img/viajes.svg" type="image/svg">
-    <!--BOOSTRAP-->
+    <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!--GOOGLE FONDS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./aseets/css/style.css">
 </head>
 <body >
+      <!--Navbar-->
     <nav id="navbar" class="navbar navbar-color navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
           <a class="navbar-brand fw-bold" href="#"><img class="img-nav"src="./aseets/img/viajes.svg" alt="logo Viajes Chile"> Viajes Chile</a>
@@ -58,27 +59,63 @@
             </button>
         </div>
     </header>
-        <!--About-->
-        <section id="quienesSomos" class="mt-4 mb-5 d-none d-md-block text-light">
-          <h2 class="text-center fw-bold">¿Quiénes somos?</h2>
+        <!--QUIENES SOMOS-->
+        <section id="quienesSomos" class="mt-4 mb-5 d-none d-md-block text-dark">
+          <h2 class="text-center text-light fw-bold">¿Quiénes somos?</h2>
             <hr class="bg-info">
-              <div class="container">
+              <div class="container text-light">
                 <div class="row">
                   <div class="col-4">
-                    <div class="container bg-info text-center"><i class="fas fa-plane fa-2x"></i></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam quidem nemo expedita magni voluptate praesentium cupiditate, et delectus ipsum nihil aut facere quasi doloribus ea vero ut beatae laboriosam labore eveniet obcaecati molestias! Earum iste pariatur quos, commodi soluta facilis quo, laborum consequuntur tempore quidem repellendus quibusdam deleniti totam.</p>
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item  bg-info">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="text-center"><i class="fas fa-plane fa-2x "></i></div>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam quidem nemo expedita magni voluptate praesentium cupiditate, et delectus ipsum nihil aut facere quasi doloribus ea vero ut beatae laboriosam labore eveniet obcaecati molestias! Earum iste pariatur quos, commodi soluta facilis quo, laborum consequuntur tempore quidem repellendus quibusdam deleniti totam.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae eum alias dolorum velit laboriosam, amet quisquam facere. Veniam quas consequuntur corrupti. Quam inventore repellendus sed possimus quibusdam, dicta fugiat. Nihil a cumque eligendi accusamus aliquam tempore velit. Ut non eligendi, deserunt expedita eum temporibus enim praesentium laudantium sit minus.</p>
-                    <div class="container bg-info text-center" ><i class="fas fa-mountain fa-2x"></i></div>
-                  </div>
-                  <div class="col-4">
-                    <div class="container bg-info text-center"><i class="fas fa-route fa-2x"></i></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi architecto repellat, dolorem, maxime, quo aperiam sunt qui unde explicabo aliquid aut ab rem eum porro asperiores? Ratione accusantium repellat hic? Doloremque, alias? Temporibus illum quae tempore tempora ducimus sunt rem maiores molestiae. Pariatur atque ullam consequatur, iure eius modi!</p>
+            
+              <div class="col-4">
+                <div class="accordion-item  bg-info ">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed  bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="text-center"><i class="fas fa-route fa-2x"></i></div>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae eum alias dolorum velit laboriosam, amet quisquam facere. Veniam quas consequuntur corrupti. Quam inventore repellendus sed possimus quibusdam, dicta fugiat. Nihil a cumque eligendi accusamus aliquam tempore velit. Ut non eligendi, deserunt expedita eum temporibus enim praesentium laudantium sit minus.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-        </section>
+
+              <div class="col-4">
+                <div class="accordion-item bg-info">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed  bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="text-center" ><i class="fas fa-mountain fa-2x"></i></div>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa optio officia quibusdam nisi cumque? Tenetur commodi similique veniam, necessitatibus tempora vel non cum, eos possimus ad perspiciatis saepe, corrupti praesentium odit voluptas sit autem cumque quibusdam hic? Vel, ex rem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </section>
         <!--Destacados-->
         <section id="destacados" class="my-5 text-light">
           <h2 class="text-center fw-bold">Destacados</h2>
@@ -87,41 +124,41 @@
                 
               <div class="row">
                 
-                <div class="col-md-3">
-                  <div class="card h-100 text-white bg-info mb-3">
-                    <img id="img" src="./aseets/img/card1.jpg" alt="">
+                <div class="col-md-3 pb-3 pb-3">
+                  <div class="card h-100 text-white bg-info pb-3">
+                    <img class="img" src="./aseets/img/card1.jpg" alt="">
                     <div class="card-body">
-                      <p class="card-title fw-bold">Titulo</p>
+                      <p class="card-title fw-bold">Lorem ipsum dolor </p>
                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minima, temporibus in delectus quae ducimus repellat doloribus velit blanditiis deserunt. Omnis eius necessitatibus error temporibus iure nemo et ipsa voluptatem?</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-3">
-                  <div class="card  h-100 text-white bg-info mb-3">
-                    <img id="img" src="./aseets/img/card2.jpg" alt="">
+                <div class="col-md-3 pb-3">
+                  <div class="card  h-100 text-white bg-info pb-3">
+                    <img class="img" src="./aseets/img/card2.jpg" alt="">
                     <div class="card-body">
-                      <p class="card-title fw-bold">Titulo</p>
+                      <p class="card-title fw-bold">Lorem ipsum dolor </p>
                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minima, temporibus in delectus quae ducimus repellat doloribus velit blanditiis deserunt. Omnis eius necessitatibus error temporibus iure nemo et ipsa voluptatem?</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-3">
-                  <div class="card h-100 text-white bg-info mb-3">
-                    <img id="img"  src="./aseets/img/card3.jpg" alt="">
+                <div class="col-md-3 pb-3">
+                  <div class="card h-100 text-white bg-info pb-3">
+                    <img class="img"  src="./aseets/img/card3.jpg" alt="">
                     <div class="card-body">
-                      <p class="card-title fw-bold">Titulo</p>
+                      <p class="card-title fw-bold">Lorem ipsum dolor </p>
                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minima, temporibus in delectus quae ducimus repellat doloribus velit blanditiis deserunt. Omnis eius necessitatibus error temporibus iure nemo et ipsa voluptatem?</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-3">
-                  <div class="card h-100 text-white  bg-info mb-3">
-                    <img id="img"src="./aseets/img/card4.jpg" alt="">
+                <div class="col-md-3  pb-3">
+                  <div class="card h-100 text-white  bg-info pb-3">
+                    <img class="img"src="./aseets/img/card4.jpg" alt="">
                     <div class="card-body">
-                      <p class="card-title fw-bold fw-bold">Titulo</p>
+                      <p class="card-title fw-bold fw-bold">Lorem ipsum dolor </p>
                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minima, temporibus in delectus quae ducimus repellat doloribus velit blanditiis deserunt. Omnis eius necessitatibus error temporibus iure nemo et ipsa voluptatem?</p>
                     </div>
                   </div>
@@ -130,11 +167,6 @@
               </div>
               </div>
         </section>
-  
-           <!--MODAL-->
-              
-
-           
     <!--FORMULARIO-->
         <section class="my-5 text-light">
           <h2 id="contacto" class="text-center fw-bold">Contacto</h2>
@@ -145,10 +177,9 @@
         </section>
     <!--ALERT BOOSTRAP-->
         <section>
-          <div class="alert alert-warning alert-dismissible fade show m-5" role="alert">
-              <strong>Estas revisando el repositorio en GITHUB PAGE!</strong>   
+          <div class="alert alert-secondary alert-dismissible fade show m-5 " role="alert">
+              <strong>Estas revisando este repositorio en GITHUB PAGE!</strong>   
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            
           </div>
         </section>
       <!--footer-->
@@ -156,9 +187,7 @@
         <div class="container">
           <div class="row">
             <div class="col-6 mt-1">
-                <h2 class="fw-bold">VIAJES CHILE</h2>
-            </div>
-            <div class="col-6 mt-2">
+                <h2 class="fw-bold">VIAJES C          <div class="col-6 mt-2">
                <a href="https://github.com/" target="_blank"><i class="fab fa-github fa-2x  mx-1 text-light"></i></a> 
                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-invision fa-2x mx-1 text-light"></i></a>
                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-2x mx-1 text-light"></i></a>

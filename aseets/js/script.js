@@ -8,10 +8,10 @@ $(document).ready(function(){
             $("#navbar").removeClass("navbar-color");
         }
     });
-    
 
-    $("#img").click(function(){
-        $(".card-body").toggle();
+    $(".img").click(function(){
+        $(".card-text").toggle();
 
 });
+
 });
